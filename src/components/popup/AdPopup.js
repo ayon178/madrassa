@@ -9,7 +9,7 @@ const AdPopup = ({ setOpen, ad }) => {
 
   const userDataString =
     typeof window !== 'undefined'
-      ? window.localStorage.getItem('earth_user')
+      ? window.localStorage.getItem('madrasa_user')
       : false
 
   const myReference = userDataString

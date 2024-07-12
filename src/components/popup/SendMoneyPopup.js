@@ -13,7 +13,7 @@ const SendMoneyPopup = ({ setOpen }) => {
 
   const user =
     typeof window !== 'undefined'
-      ? window.localStorage.getItem('earth_user')
+      ? window.localStorage.getItem('madrasa_user')
       : false
   const parsedUser = user ? JSON.parse(user) : false
 
@@ -49,7 +49,7 @@ const SendMoneyPopup = ({ setOpen }) => {
       toast.error('Something went wrong')
     }
   }
-  
+
   return (
     <div className="popup_wrapper">
       <div className="popup_content relative">

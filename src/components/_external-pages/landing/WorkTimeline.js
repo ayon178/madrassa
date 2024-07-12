@@ -22,52 +22,52 @@ const WorkTimeline = () => {
   const TIMELINES = [
     {
       key: 2,
-      title: 'Treatment & Medication',
+      title: 'নুরানী মক্তব',
       des: 'We provide treatment and medication for all types of diseases',
-      time: 'Medical ',
+      time: 'শিক্ষা ',
       color: 'primary',
-      icon: <MedicalInformationIcon />,
+      icon: <LocalLibraryIcon />,
     },
     {
       key: 3,
-      title: 'Products in low price',
+      title: 'আদর্শ নাজেরা',
       des: 'We provide products in low price than market',
-      time: 'Products',
+      time: 'শিক্ষা',
       color: 'secondary',
-      icon: <ShoppingCartIcon />,
+      icon: <LocalLibraryIcon />,
     },
     {
       key: 4,
-      title: 'Solving unemployment',
+      title: 'হিফজুল কুরআন',
       des: 'We provide jobs to unemployed people',
-      time: 'Jobs',
+      time: 'শিক্ষা',
       color: 'info',
-      icon: <WorkHistoryIcon />,
+      icon: <LocalLibraryIcon />,
     },
     {
       key: 5,
-      title: 'Medical Support',
+      title: 'হিফজ বিভিশন',
       des: 'We provide medical support to poor people',
-      time: 'Support',
+      time: 'শিক্ষা',
       color: 'success',
-      icon: <VaccinesIcon />,
+      icon: <LocalLibraryIcon />,
     },
     {
       key: 6,
-      title: 'Learning & Education',
+      title: 'ইসলামী সংঙ্গীত শিক্ষা ও আররী ও ইংরেজী শিক্ষা ',
       des: 'We provide the best courses for learning to solve unemployment',
-      time: 'Courses',
+      time: 'শিক্ষা',
       color: 'warning',
       icon: <LocalLibraryIcon />,
     },
-    // {
-    //   key: 7,
-    //   title: 'Error',
-    //   des: 'Morbi mattis ullamcorper',
-    //   time: '12:00 am',
-    //   color: 'error',
-    //   icon: <FastfoodIcon />,
-    // },
+    {
+      key: 7,
+      title: 'অনলাইন ই-মাদ্রাসা',
+      des: 'বিসমিল্লাহির রাহমানির রাহীম ফাহমিদা হক জিম অনলাইন মাদ্রাসা এটি আর্থ ফাউনেডেসনের একটি শিক্ষা মুলক প্রতিষ্ঠান আমাদের এই অনলাইন মাদ্রাসা টি থেকে আপনি যে কোন সময় কলসেন্টার এর মত করে ২৪/৭ নামাজের সময় বাদে Whtsapp বা imo এর মাধ্যমে ভিডিও কল করে পড়া নিতে এবং দিতে পারবেন। সারাদিনে একবার দুইবার তিন বার যতো খুসি। ২৪ ঘন্টায় অনতত একবার পড়া না দিলে আমাদের একজন শিক্ষক আপনাকে কল করবে পড়া নেওয়া এবং দেওয়ার জন্য। সে ক্ষেত্রে আপনি আপনার জিবন দসায় কুরআনের হাফেজ বা হাফেজা হয়ে, আপনি নাজাতের পথ নিয় পৃথিবীর থেকে বিদায় নিতে পারবেন ইনসাআল্লাহ।',
+      time: 'শিক্ষা',
+      color: 'error',
+      icon: <LocalLibraryIcon />,
+    },
   ]
   return (
     <>
@@ -104,12 +104,14 @@ const WorkTimeline = () => {
                       }}
                     >
                       <Typography variant="subtitle2">{item.title}</Typography>
-                      <Typography
-                        variant="body2"
-                        sx={{ color: 'text.secondary' }}
-                      >
-                        {item.des}
-                      </Typography>
+                      {item.key === 7 && (
+                        <Typography
+                          variant="body2"
+                          sx={{ color: 'text.secondary' }}
+                        >
+                          {item.des}
+                        </Typography>
+                      )}
                     </Paper>
                   </TimelineContent>
                 </TimelineItem>

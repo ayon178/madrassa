@@ -16,15 +16,15 @@ const menuConfig = [
     icon: <Icon icon={homeFill} {...ICON_SIZE} />,
   },
   {
-    title: 'Products',
-    path: '/products',
+    title: 'Details',
+    path: '/details',
     icon: <Icon icon={fileFill} {...ICON_SIZE} />,
   },
-  {
-    title: 'Marketing Plan',
-    path: '/marketing-plan',
-    icon: <Icon icon={fileFill} {...ICON_SIZE} />,
-  },
+  // {
+  //   title: 'Marketing Plan',
+  //   path: '/marketing-plan',
+  //   icon: <Icon icon={fileFill} {...ICON_SIZE} />,
+  // },
 ]
 
 export default menuConfig

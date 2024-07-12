@@ -13,7 +13,7 @@ const BinaryTreeView = ({ allDataView }) => {
     const fetchUserAndRedirect = async () => {
       const user =
         typeof window !== 'undefined'
-          ? window.localStorage.getItem('earth_user')
+          ? window.localStorage.getItem('madrasa_user')
           : false
       const parsedUser = user ? JSON.parse(user) : false
 

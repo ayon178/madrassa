@@ -8,7 +8,6 @@ import Hero from '@/components/_external-pages/landing/Hero'
 import WorkTimeline from '@/components/_external-pages/landing/WorkTimeline'
 import Gallery from '@/components/_external-pages/landing/Gallery'
 import { useRouter } from 'next/router'
-import { useEffect } from 'react'
 import News from '@/components/_external-pages/landing/News'
 
 // ----------------------------------------------------------------------

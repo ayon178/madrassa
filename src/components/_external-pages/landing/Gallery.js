@@ -1,17 +1,39 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { Container, Grid, Paper, Typography } from '@mui/material'
 import { useState } from 'react'
+import imageOne from '../../../../public/static/home/service_one.jpg'
+import imageTwo from '../../../../public/static/home/service_two.jpg'
+import imageThree from '../../../../public/static/home/service_three.jpg'
+import imageFour from '../../../../public/static/home/service_four.jpg'
+import imageFive from '../../../../public/static/home/service_five.jpg'
+import imageSix from '../../../../public/static/home/service_six.jpg'
+import imageSeven from '../../../../public/static/home/service_seven.jpg'
+import imageEight from '../../../../public/static/home/service_eight.jpg'
+import imageNine from '../../../../public/static/home/service_nine.jpg'
+import imageTen from '../../../../public/static/home/service_ten.jpg'
+import imageEleven from '../../../../public/static/home/service_eleven.jpg'
+import imageTwelve from '../../../../public/static/home/service_twelve.jpg'
+import imageThirteen from '../../../../public/static/home/service_thirteen.jpg'
+import imageFourteen from '../../../../public/static/home/service_fortin.jpg'
+import imageFifteen from '../../../../public/static/home/service_fitfeen.jpg'
 
 const Gallery = () => {
   const images = [
-    'https://i.ibb.co/2vJBRs3/service-two.jpg',
-    'https://i.ibb.co/x70G0Dv/service-eight.jpg',
-    'https://i.ibb.co/b7b8mqC/service-one.jpg',
-    'https://i.ibb.co/XSNLyww/service-seven.jpg',
-    'https://i.ibb.co/zNKsBrr/service-six.jpg',
-    'https://i.ibb.co/pv5jSsD/service-five.jpg',
-    'https://i.ibb.co/rFQzyc1/service-four.jpg',
-    'https://i.ibb.co/gZ3TzSx/service-three.jpg',
+    imageOne.src,
+    imageTwo.src,
+    imageThree.src,
+    imageFour.src,
+    imageFive.src,
+    imageSix.src,
+    imageSeven.src,
+    imageEight.src,
+    imageNine.src,
+    imageTen.src,
+    imageEleven.src,
+    imageTwelve.src,
+    imageThirteen.src,
+    imageFourteen.src,
+    imageFifteen.src,
   ]
   const [selectedImage, setSelectedImage] = useState(null)
 

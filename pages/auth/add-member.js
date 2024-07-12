@@ -86,7 +86,7 @@ const AddMember = () => {
     const fetchUserAndRedirect = async () => {
       const user =
         typeof window !== 'undefined'
-          ? window.localStorage.getItem('earth_user')
+          ? window.localStorage.getItem('madrasa_user')
           : false
       const parsedUser = user ? JSON.parse(user) : false
 
@@ -140,8 +140,8 @@ const AddMember = () => {
       // Give the 1250tk to admin
       await moneyAddRemove('DR-261211', 100, true)
       const updatedUser = await moneyAddRemove(input.referenceId, 100, false)
-      // localStorage.removeItem('earth_user')
-      // localStorage.setItem('earth_user', JSON.stringify(updatedUser))
+      // localStorage.removeItem('madrasa_user')
+      // localStorage.setItem('madrasa_user', JSON.stringify(updatedUser))
 
       // Money transfer...input.referenceId will get 300tk, input.referenceId's referenceId will get 50tk, input.referenceId's referenceId's referenceId will get 30tk, like this 10tk will be transfered. So each time will have to check if there is any user in the referenceId field. If there is then transfer money to that user
 

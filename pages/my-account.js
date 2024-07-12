@@ -27,7 +27,7 @@ const MyAccount = () => {
     // Retrieve the user data from localStorage
     const userDataString =
       typeof window !== 'undefined'
-        ? window.localStorage.getItem('earth_user')
+        ? window.localStorage.getItem('madrasa_user')
         : false
 
     if (userDataString) {
@@ -42,7 +42,7 @@ const MyAccount = () => {
         const updatedUserDataString = JSON.stringify(userData)
 
         // Store the updated user object back in localStorage
-        window.localStorage.setItem('earth_user', updatedUserDataString)
+        window.localStorage.setItem('madrasa_user', updatedUserDataString)
 
         window.location.reload()
       } catch (error) {
@@ -55,7 +55,7 @@ const MyAccount = () => {
     const fetchUserAndRedirect = async () => {
       const user =
         typeof window !== 'undefined'
-          ? window.localStorage.getItem('earth_user')
+          ? window.localStorage.getItem('madrasa_user')
           : false
       const parsedUser = user ? JSON.parse(user) : false
 

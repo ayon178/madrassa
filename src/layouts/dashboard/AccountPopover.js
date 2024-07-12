@@ -57,7 +57,7 @@ export default function AccountPopover({ user }) {
   }
 
   const handleLogOut = () => {
-    localStorage.removeItem('earth_user')
+    localStorage.removeItem('madrasa_user')
     router.push('/')
   }
 

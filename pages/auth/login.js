@@ -63,7 +63,7 @@ export default function Login() {
     const fetchUserAndRedirect = () => {
       const user =
         typeof window !== 'undefined'
-          ? window.localStorage.getItem('earth_user')
+          ? window.localStorage.getItem('madrasa_user')
           : null
 
       if (user) {
@@ -105,7 +105,7 @@ export default function Login() {
 
       toast.success('Login successful')
       localStorage.setItem(
-        'earth_user',
+        'madrasa_user',
         JSON.stringify({ allData: false, myReference: user.myReference })
       )
       router.push('/')
