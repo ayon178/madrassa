@@ -107,7 +107,7 @@ const AddMember = () => {
   }, [router])
 
   const handleAddMember = async () => {
-    if (currentUser?.balance < 349) {
+    if (currentUser?.balance < 350) {
       toast.error('You do not have enough balance to add a member')
       return
     }
