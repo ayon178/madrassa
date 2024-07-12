@@ -13,8 +13,6 @@ MainLayout.propTypes = {
 }
 
 export default function MainLayout({ children }) {
-  
-
   return (
     <>
       <MainNavbar />
@@ -35,10 +33,10 @@ export default function MainLayout({ children }) {
 
           <Typography variant="caption" component="p">
             © All rights reserved
-            <br /> Developed by &nbsp;
+            {/* <br /> Developed by &nbsp;
             <Link href="https://www.linkedin.com/in/ayon-jodder">
               Ayon Jodder
-            </Link>
+            </Link> */}
           </Typography>
         </Container>
       </Box>
