@@ -16,9 +16,11 @@ import imageTwelve from '../../../../public/static/home/service_twelve.jpg'
 import imageThirteen from '../../../../public/static/home/service_thirteen.jpg'
 import imageFourteen from '../../../../public/static/home/service_fortin.jpg'
 import imageFifteen from '../../../../public/static/home/service_fitfeen.jpg'
+import imageSixteen from '../../../../public/static/home/service_sixteen.jpg'
 
 const Gallery = () => {
   const images = [
+    imageSixteen.src,
     imageOne.src,
     imageTwo.src,
     imageThree.src,
