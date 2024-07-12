@@ -138,8 +138,8 @@ const AddMember = () => {
 
     if (input.referenceId !== 'DR-261211') {
       // Give the 1250tk to admin
-      await moneyAddRemove('DR-261211', 100, true)
-      const updatedUser = await moneyAddRemove(input.referenceId, 100, false)
+      await moneyAddRemove('DR-261211', 350, true)
+      const updatedUser = await moneyAddRemove(input.referenceId, 350, false)
       // localStorage.removeItem('madrasa_user')
       // localStorage.setItem('madrasa_user', JSON.stringify(updatedUser))
 
